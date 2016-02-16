@@ -1,0 +1,24 @@
+{
+  "name": "apexwire/yii2-parser-1c",
+  "description": "parser 1c",
+  "type": "library",
+  "keywords": [
+    "parser",
+    "1c"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ApexWire",
+      "email": "apexwire@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "apexwire\\parser\\file1c\\": "/"
+    }
+  }
+}
