@@ -32,10 +32,10 @@ As a result of the creation of the object to obtain:
 In this embodiment, a file is used as a data source. In order to process the file you need to create an object to pass the full path to the file.
 Example of use:
 `Use apexwire\parser1c\File;
-$ Doc = new File ( 'file-path'); `
+$doc = new File('file-path');`
 
 ### Text
 In this embodiment, a file is used as a data source. In order to process the file you need to create an object to pass the full path to the file.
 Example of use:
 `Use apexwire\parser1c\Text;
-$ Doc = new Text ( 'file-path'); `
+$doc = new Text('file-path');`
