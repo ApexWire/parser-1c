@@ -4,7 +4,7 @@ namespace apexwire\parser1c;
 
 /**
  * Class File Парсим данные из файла
- * @package apexwire\parser1c\parser
+ * @package apexwire\parser1c
  */
 class File extends Parser
 {

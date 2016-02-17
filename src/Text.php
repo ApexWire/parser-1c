@@ -4,7 +4,7 @@ namespace apexwire\parser1c;
 
 /**
  * Class Text Парсим данные, переданные в текстовом виде
- * @package apexwire\parser1c\parser
+ * @package apexwire\parser1c
  */
 class Text extends Parser
 {

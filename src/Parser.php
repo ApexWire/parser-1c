@@ -6,7 +6,7 @@ use apexwire\parser1c\section\Section;
 
 /**
  * Class Parser
- * @package apexwire\parser1c\parser
+ * @package apexwire\parser1c
  */
 abstract class Parser
 {
