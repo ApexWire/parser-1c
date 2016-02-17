@@ -1,12 +1,10 @@
 <?php
 
-namespace apexwire\parser\file1c\section;
-
-use apexwire\parser\file1c\Section;
+namespace apexwire\parser1c\section;
 
 /**
  * Class Document Секция "СекцияДокумент"
- * @package apexwire\parser\file1c\section
+ * @package apexwire\parser1c\section
  */
 class Document extends Section
 {

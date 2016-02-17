@@ -1,12 +1,9 @@
 #parser-1c
-
 PHP parser library for 1s files.
 
 
 ## Installation
-
 The preferred way to install the extension through [Composer] (http://getcomposer.org/).
-
 Start
 
     php composer.phar require apexwire / parser-1c "dev-master"
@@ -18,24 +15,27 @@ or add
 in the section "require" your composer.json
 
 ## Requirements
-
 In order to run you must meet the following requirements:
 
 * version of php >=5.4.0
 
-
 ## Description
+There are two options for the data source file and text. Each option provides a use case.
+As a result of the creation of the object to obtain:
 
-Before they like to use the library, you need to connect it: `use apexwire\parser\file1c\Parser;`
+- A list of possible errors: `errors`
+- The status of the implementation of parsing file: `success`
+- A list of file properties: `properties`
+- A list of available sections in the file: `sections`. It contains an array of objects sections. Each object contains the same: `errors`,` success`, `properties`.
 
-The library has two 1s contents of the file transfer options:
+### File
+In this embodiment, a file is used as a data source. In order to process the file you need to create an object to pass the full path to the file.
+Example of use:
+`Use apexwire\parser1c\parser\File;
+$ Doc = new File ( 'file-path'); `
 
-* Get the content directly from the file: `Parser::createFromFile('filename');`;
-* Transfer the contents in text form: `Parser::create('text');`.
-
-As a result of execution of the above functions, to obtain the object:
-
-- a list of possible errors: `errors`
-- the status of the implementation of parsing file: `success`
-- a list of file properties: `properties`
-- a list of available sections in the file: `sections`. It contains an array of objects sections. Each object contains the same: `errors`,` success`, `properties`.
+### text
+In this embodiment, a file is used as a data source. In order to process the file you need to create an object to pass the full path to the file.
+Example of use:
+`Use apexwire\parser1c\parser\Text;
+$ Doc = new Text ( 'file-path'); `

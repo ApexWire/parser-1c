@@ -1,13 +1,13 @@
 <?php
 
-namespace apexwire\parser\file1c;
+namespace apexwire\parser1c\section;
 
 /**
  * Class Section Родительский класс для секций документа 1С
- * @package apexwire\parser\file1c
+ * @package apexwire\parser1c\section
  */
 
-class Section
+abstract class Section
 {
     /** Константа начала секции */
     const START = '';
@@ -17,8 +17,8 @@ class Section
     /** Свойства */
     /** @type array Массив секций */
     public static $sections = [
-        'apexwire\parser\file1c\section\СheckingAccount',
-        'apexwire\parser\file1c\section\Document',
+        'apexwire\parser1c\section\СheckingAccount',
+        'apexwire\parser1c\section\Document',
     ];
     /** @type array массив ошибок */
     protected $errors = [];
@@ -34,15 +34,15 @@ class Section
      *
      * @param $name
      * @param $data
-     * @return Section
+     * @return mixed
+     * @throws \Exception
      */
     public static function create($name, $data)
     {
         try {
             $obj = new $name($data);
         } catch (\Exception $e) {
-            $obj = new self($data);
-            $obj->addError('Класса ' . $name . ' не существует!');
+            throw new \Exception('Класса ' . $name . ' не существует!');
         }
 
         return $obj;

@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "apexwire\\parser\\file1c\\": "/"
+      "apexwire\\parser1c\\": "src/"
     }
   }
 }
