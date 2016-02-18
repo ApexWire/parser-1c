@@ -39,11 +39,11 @@ $doc = new File('file-path');
 ```
 
 ### Text
-In this embodiment, a file is used as a data source. In order to process the file you need to create an object to pass the full path to the file.
+In this embodiment, the text is used as a data source.
 
 Example of use:
 
 ```php
 use apexwire\parser1c\Text;
-$doc = new Text('file-path');
+$doc = new Text('text');
 ```
