@@ -126,9 +126,6 @@ abstract class Parser
     {
         // TODO: валидация всего файла
 
-        echo "<pre>";
-        print_r($this);
-        echo "</pre>";
         //Проверка первой строки файла
         if ($this->header !== '1CClientBankExchange') {
             throw new \Exception('Требуется указать заголовок файла "1CClientBankExchange" в строке №1!');
