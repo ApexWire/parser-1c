@@ -16,6 +16,10 @@ class Document extends Section
     /** @type array Список возможных свойств */
     protected static $propertiesSettings = [
         // Шапка платежного документа
+        'СекцияДокумент' => [
+            'required' => true,
+            'type' => 'строка',
+        ],
         'Номер' => [
             'required' => true,
             'type' => 'строка',

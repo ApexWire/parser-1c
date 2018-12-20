@@ -213,6 +213,10 @@ abstract class Parser
                 // иначе пытаемся добавить её в свойство документа
                 $this->addProperty($key, $value);
             }
+            else
+            {
+                $this->tmpSection[$key] = $value;
+            }
         }
     }
 
