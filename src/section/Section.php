@@ -155,9 +155,16 @@ abstract class Section
     public function getProperty($name)
     {
         if (isset(static::$propertiesSettings[$name])) {
-            return $this->properties['standart'][$name];
+            if (isset($this->properties['standart'][$name]))
+            {
+                return $this->properties['standart'][$name];
+            }
+            else
+            {
+                return null;
+            }
         }
-        //TODO: сделать обработку отсутствия запроашиваемого свойства в конфиге
+        //TODO: сделать обработку отсутствия запрашиваемого свойства в конфиге
     }
 
     /**
