@@ -343,4 +343,9 @@ abstract class Parser
             return $this->sections;
         }
     }
+
+    public function getProperties()
+    {
+        return $this->properties;
+    }
 }
